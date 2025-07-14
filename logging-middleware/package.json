@@ -3,8 +3,11 @@
   "version": "1.0.0",                    
   "type": "module",
   "main": "log.js",                     
-  "exports": {                           
-    "./log.js": "./log.js"
+  "exports": {
+    "./log": {
+      "browser": "./log.browser.js",
+      "default": "./log.js"
+    }
   },
   "dependencies": {
     "dotenv": "^17.2.0",

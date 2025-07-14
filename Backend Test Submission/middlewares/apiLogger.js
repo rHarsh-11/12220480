@@ -1,4 +1,4 @@
-import { Log } from 'logging-middleware/log.js';
+import { Log } from 'logging-middleware/log';
 
 export async function apiLogger(stack, level, pkg, message) {
   try {
