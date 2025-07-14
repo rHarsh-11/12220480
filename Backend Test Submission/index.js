@@ -18,7 +18,6 @@ async function start() {
       console.log(`Server running on port ${process.env.PORT}`)
     );
   } catch (err) {
-    // still use apiLogger—not console—but we need env var access:
     const { apiLogger } = await import('./middlewares/apiLogger.js');
     await apiLogger('backend', 'fatal', 'db', err.message);
     process.exit(1);
