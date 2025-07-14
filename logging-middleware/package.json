@@ -1,0 +1,13 @@
+{
+  "name": "logging-middleware",          
+  "version": "1.0.0",                    
+  "type": "module",
+  "main": "log.js",                     
+  "exports": {                           
+    "./log.js": "./log.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "node-fetch": "^3.3.2"
+  }
+}
