@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Log } from 'logging-middleware/log';
+import { Log } from 'logging-middleware/log.js';
 
 const API_BASE = 'http://localhost:4000';
 
